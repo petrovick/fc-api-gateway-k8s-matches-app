@@ -36,7 +36,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: "matches.bets.svc.cluster.local" #  {{ $fullName }}
+                name: "matches" #  {{ $fullName }}
                 port:
                   number: 9999 #  {{ $svcPort }}
           {{- end }}
